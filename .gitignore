@@ -1,6 +1,10 @@
 # Test artifacts
 tests/integration/testdata/
 
+# User 
+.knowledge/
+.data/ 
+
 # Binary
 openclaw-go
 

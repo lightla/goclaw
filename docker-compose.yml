@@ -25,6 +25,8 @@ services:
         VERSION: "${GOCLAW_VERSION:-dev}"
     ports:
       - "${GOCLAW_PORT:-18790}:18790"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     env_file:
       - path: .env
         required: false
